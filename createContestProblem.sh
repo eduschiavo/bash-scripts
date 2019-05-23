@@ -2,7 +2,7 @@
 # @file createContestProblem.sh
 # @author Luiz Eduardo Camargo Aranha Schiavo <eduschiavo@gmail.com>
 # @version 1.0.1
-# @date 2019-05-23
+# @date 2014-2019
 #
 # @section LICENSE
 # 
@@ -37,6 +37,13 @@ EXTENSION=cpp
 
 # creates and open a problem, input and output solution from param passed by
 # terminal (A, 1022, etc) 
+
+if [ -z "$1" ]; then
+    echo Error!! No parameters!
+    echo Default syntax: ./createContestProblem.sh problem 
+    exit 1
+fi
+
 
 if [ ! -d "src" ]; then
     mkdir -p src

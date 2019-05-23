@@ -21,10 +21,14 @@
 # 
 # @section DESCRIPTION
 # 
-# runContestProblem.sh compiles, run with time, after it diffs the output with
-# correct answer
+# XXXXXXXXXXXX.sh do something
 # 
 # 2014-07    - 1.0   - info
 # 2019-05-23 - 1.0.1 - parameterized Public version, 
 
 #!/bin/bash
+if [ -z "$1" ]; then
+    echo Error!! No parameters!
+    echo Default syntax: ./XXXXXXXXXXXX.sh problem 
+    exit 1
+fi

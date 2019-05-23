@@ -29,14 +29,13 @@
 
 
 if [ ! -d "$HOME/bin" ]; then
-#     mkdir -p $HOME/bin
+    mkdir -p $HOME/bin
 fi
 
 # scripts for programming contests
 cp createContestProblem.sh ~/bin/
 cp runContestProblem.sh ~/bin/
-# 
-# # general useful bash tools
-# cp toUpper.sh ~/bin/
-# cp toLower.sh ~/bin/
-# cp headTail.sh ~/bin/
+
+
+# general useful bash tools
+cp headTail.sh ~/bin/

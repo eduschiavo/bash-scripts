@@ -1,5 +1,8 @@
-2019-05-23 1.0.2
+2019-05-23 1.0.1
 
+- created install.sh
+- created default.sh (standard .sh with header)
+- created parameterized headTail.sh from old cabeca.sh
 - created parameterized runContestProblem.sh from old roda.sh
 - created parameterized createContestProblem.sh from old cria.sh
 - created ChangeLog

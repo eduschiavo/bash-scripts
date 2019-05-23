@@ -2,7 +2,7 @@
 # @file headTail.sh
 # @author Luiz Eduardo Camargo Aranha Schiavo <eduschiavo@gmail.com>
 # @version 1.0.1
-# @date 
+# @date 2016-2019
 #
 # @section LICENSE
 # 
@@ -24,7 +24,7 @@
 # runContestProblem.sh compiles, run with time, after it diffs the output with
 # correct answer
 # 
-# 2014-07    - 1.0   - info
+# 2016-07    - 1.0   - show fixed size head and tail from a file
 # 2019-05-23 - 1.0.1 - parameterized Public version, 
 
 #!/bin/bash

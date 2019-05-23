@@ -1,8 +1,8 @@
 ############################L.E.C.A.S. bash-scripts############################
 # @file runContestProblem.sh
 # @author Luiz Eduardo Camargo Aranha Schiavo <eduschiavo@gmail.com>
-# @version 1.0
-# @date 2019
+# @version 1.0.1
+# @date 2014-2019
 #
 # @section LICENSE
 # 
@@ -43,10 +43,17 @@ LIBS=-lm
 #erase binary?
 ERASE=true
 
+if [ -z "$1" ]; then
+    echo Error!! No parameters!
+    echo Default syntax: ./runContestProblem.sh problem 
+    exit 1
+fi
+
+
 $COMPILER src/$1.$EXTENSION $FLAGS $DIALET $LIBS -o $1
 
 time ./$1 <in/$1.in >$1.res
-diff $1.res out/$1.out
+diff -y $1.res out/$1.out
 rm $1.res 
 if $ERASE; then
     rm $1
