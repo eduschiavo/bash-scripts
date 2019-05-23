@@ -7,6 +7,7 @@ Some usefull bash scripts
 
 @date 2019
 
+
 #INSTALL INSTRUCTIONS
 
 Do not run as root!! 
@@ -25,6 +26,7 @@ createContestProblem.sh - create source, input and default answer files for
                           
 runContestProblem.sh - compile, run (with time) and test if the result matches
                        the answer
+                       
 #USEFUL SCRIPTS
 
 
